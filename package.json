@@ -1,18 +1,34 @@
 {
-  "name": "Todo",
+  "name": "bubnovskiy30",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/app.js",
   "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
     "server": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "client": "npm run start --prefix client",
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
   },
-  "keywords": [],
-  "author": "",
+  "author": "Oleg Shcherbakov <oshcherbakov2018@mail.ru>",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^6.0.7",
-    "nodemon": "^2.0.13"
+    "express-validator": "^6.12.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.5",
+    "nanoid": "^3.1.25",
+    "nodemailer": "^6.6.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.12"
   }
 }

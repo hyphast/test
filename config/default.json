@@ -1,0 +1,12 @@
+{
+  "port": 5000,
+  "mongoUri": "mongodb+srv://admin:admin@cluster0.0xl8a.mongodb.net/app?retryWrites=true&w=majority",
+  "jwtAccessSecret": "tree man key own observer weird somebody starting way peace market basketball yup",
+  "jwtRefreshSecret": "one entire fit getting try both grow eagle round stay done mine looking my take on this fire",
+  "smtpHost": "smtp.gmail.com",
+  "smtpPort": 587,
+  "smtpUser": "bubnovskiy30@gmail.com",
+  "smtpPassword": "123bub456novskiy30",
+  "apiUrl": "http://localhost:5000",
+  "clientUrl": "http://localhost:3000"
+}
